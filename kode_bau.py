@@ -1,15 +1,24 @@
-import os, sys, math
+"""Modul perbaikan kode sesuai standar PEP 8."""
 
-x = 10
 
-def Bad_Function_Name( A, B, C, D, E, F ):
- global x
- l = 1; O = 0
- if A == True:
-  if B == False:
-   if C == None:
-    try: print(eval("A + B")); res = E[0] + F + l + O
-    except: pass
- else: return None
+def fungsi_baik(angka_a, angka_b):
+    """Menjumlahkan dua angka.
 
-Bad_Function_Name(True, False, None, 1, [2], 3)
+    Args:
+        angka_a: Angka pertama.
+        angka_b: Angka kedua.
+
+    Returns:
+        Hasil penjumlahan angka_a dan angka_b.
+    """
+    return angka_a + angka_b
+
+
+def main():
+    """Fungsi utama program."""
+    hasil = fungsi_baik(10, 20)
+    print(f"Hasil penjumlahan: {hasil}")
+
+
+if __name__ == "__main__":
+    main()
